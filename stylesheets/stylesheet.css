@@ -285,7 +285,7 @@ Full-Width Styles
   z-index: 10;
   padding: 50px 50px 50px 50px;
   color: #fff;
-  background: url('../images/github_icon.gif') no-repeat 95% 50%;
+  background: url('../images/github_icon.gif') no-repeat 100% 100%;
   font-weight: 700;
   /*box-shadow: 0 0 10px rgba(0,0,0,.5);*/
   border-bottom-left-radius: 2px;
@@ -296,11 +296,11 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  right: 60px;
+  right: 100px;
   z-index: 10;
   padding: 50px 50px 50px 50px;
   color: #fff;
-  background: url('../images/linkedin_icon.gif')  no-repeat 95% 50%;
+  background: url('../images/linkedin_icon.gif')  no-repeat 100% 100%;
   font-weight: 700;
   /*box-shadow: 0 0 10px rgba(0,0,0,.5);*/
   border-bottom-left-radius: 2px;
@@ -311,11 +311,11 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  right: 110px;
+  right: 190px;
   z-index: 10;
   padding: 50px 50px 50px 50px;
   color: #fff;
-  background: url('../images/twitter_icon2.gif')  no-repeat 95% 50%;
+  background: url('../images/twitter_icon2.gif')  no-repeat 100% 100%;
   font-weight: 700;
   /*box-shadow: 0 0 10px rgba(0,0,0,.5);*/
   border-bottom-left-radius: 2px;
