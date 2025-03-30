@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edouard Legoupil CV</title>
+    <meta name="description" content="Edouard Legoupil CV">
+    <meta name="keywords" content="Edouard Legoupil CV, Resume, data, AI, data science, data governance, Humanitarian">
+    <meta name="author" content="Edouard Legoupil">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Edouard Legoupil CV">
+    <meta property="og:description" content="Edouard Legoupil CV, Resume, data, AI, data science, data governance, Humanitarian.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edouard-legoupil.github.io/">
+    <meta property="og:image" content="https://edouard-legoupil.github.io/edouard_pic.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Edouard Legoupil CV">
+    <meta name="twitter:description" content="Edouard Legoupil CV, Resume, data, AI, data science, data governance, Humanitarian.">
+    <meta name="twitter:image" content="https://edouard-legoupil.github.io/edouard_pic.jpg">
+
+    <script>
+        function getBrowserLanguage() {
+            let lang = navigator.language || navigator.userLanguage;
+            return lang.startsWith('fr') ? 'fr' : 'en';
+        }
+
+        function updatePDF(lang) {
+            document.getElementById("pdf-viewer").src = lang === 'fr' ? 'cv_edouard_legoupil_fr.pdf' : 'cv_edouard_legoupil_en.pdf';
+        }
+
+     function setLanguage(lang) {
+            updatePDF(lang);
+            document.getElementById("btn-en").classList.remove("active");
+            document.getElementById("btn-fr").classList.remove("active");
+            
+            if (lang === "en") {
+                document.getElementById("btn-en").classList.add("active");
+            } else {
+                document.getElementById("btn-fr").classList.add("active");
+            }
+        }
+
+        window.onload = function() {
+            let browserLang = getBrowserLanguage();
+            setLanguage(browserLang);
+        };
+    </script>
+    <style>
+        .language-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .language-selector button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div class="language-selector">
+        <button id="btn-en" onclick="setLanguage('en')">EN</button>
+        <button id="btn-fr" onclick="setLanguage('fr')">FR</button> 
+    </div>
+    <iframe id="pdf-viewer" width="100%" height="1700px"></iframe>
+</body>
+</html>
+
+
+
